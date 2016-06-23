@@ -2,8 +2,7 @@
  @using PagedList.Mvc; 
 @using PagedList; 
 @{
-    ViewBag.Title = @DateTime.Now
-;
+    ViewBag.Title = @DateTime.Now;
 }
 
 <h2>Гаряча вода</h2>
@@ -86,3 +85,4 @@
 </div>
 @Html.PagedListPager( (IPagedList)ViewBag.OnePageOfProducts, page => Url.Action("Index", new { page }) )
 @Scripts.Render("~/scripts/jquery.unobtrusive-ajax.js")
+

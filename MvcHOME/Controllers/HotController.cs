@@ -7,12 +7,13 @@ using System.Web;
 using System.Web.Mvc;
 using PagedList;
 using System.IO;
+using Newtonsoft.Json;
 namespace MvcHOME.Controllers
 {
     public class HotController : Controller
     {
         private Model1Container db = new Model1Container();
-
+      
         //
         // GET: /Hot/
 

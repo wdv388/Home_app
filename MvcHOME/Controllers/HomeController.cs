@@ -11,7 +11,12 @@ namespace MvcHOME.Controllers
     public class HomeController : Controller
     {
         private Model1Container db = new Model1Container();
-
+        public ActionResult ShowTrend()
+        {
+            var homlist = db.HomItems.ToList();
+            return View(homlist);
+        }
+        //
         public ActionResult Start()
         {
             var list = db.HomItems.ToList();
@@ -26,9 +31,9 @@ namespace MvcHOME.Controllers
             {
               return View(db.HomItems.ToList());
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                return HttpNotFound();
+                return HttpNotFound(e.Message);
               //  throw;
             }
             
