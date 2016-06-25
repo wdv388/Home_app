@@ -205,6 +205,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Image\ajax.gif" />
     <Content Include="Content\jquery-ui-1.10.4\AUTHORS.txt" />
     <Content Include="Content\jquery-ui-1.10.4\demos\accordion\collapsible.html" />
     <Content Include="Content\jquery-ui-1.10.4\demos\accordion\custom-icons.html" />
@@ -970,6 +971,7 @@
     <Content Include="Content\jquery-ui-1.10.4\ui.widget.jquery.json" />
     <Content Include="Content\jquery-ui-1.10.4\ui\.jshintrc" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Scripts\Add_button_value.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\Cold_water.js" />
@@ -989,6 +991,7 @@
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\Reload_button.js" />
     <Content Include="Scripts\Sewage.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
@@ -1056,6 +1059,7 @@
     <Content Include="Views\Sewage\IndexSort.cshtml" />
     <Content Include="Views\Electricity\IndexSort.cshtml" />
     <Content Include="Views\Home\ShowTrend.cshtml" />
+    <Content Include="Views\Home\IndexAj.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

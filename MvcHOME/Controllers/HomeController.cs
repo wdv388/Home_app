@@ -11,6 +11,12 @@ namespace MvcHOME.Controllers
     public class HomeController : Controller
     {
         private Model1Container db = new Model1Container();
+        //
+        public ActionResult IndexAj()
+        {
+            return View();
+        }
+        //
         public ActionResult ShowTrend()
         {
             var homlist = db.HomItems.ToList();

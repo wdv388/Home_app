@@ -20,7 +20,8 @@ namespace MvcHOME
                         "~/Scripts/jquery.validate*"));
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                        "~/Scripts/bootstrap.js",
-                       "~/Scripts/jquery-1.8.2.js"));
+                       //"~/Scripts/jquery-1.8.2.js",
+                       "~/Content/jquery-ui-1.10.4/jquery-1.10.2.js"));
 
             // Используйте версию Modernizr для разработчиков, чтобы учиться работать. Когда вы будете готовы перейти к работе,
             // используйте средство построения на сайте http://modernizr.com, чтобы выбрать только нужные тесты.

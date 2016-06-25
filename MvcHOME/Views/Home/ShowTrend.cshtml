@@ -6,21 +6,28 @@
 
     
 
-<div id="part1" class="btn-group" role="group"> 
+
             <h2>Оберіть квартиру</h2>
+<div class="row"> 
 @foreach (var item in Model)
 {
        
-       <div id="past" >
-           <input type="checkbox" name="@item.ID" />@item.Apartament_naber
-
+       <div id="past" class="col-md-1 col-md-offset-1">
+           <input type="checkbox" name="@item.ID" id="check"/>@item.Apartament_naber
+           
         </div> 
   
- }           
-   
+ }  
+@*   <p>Date: <input type="text" id="datepicker" class="col-md-1"></p>   *@
+</div> 
+      
+  <div id="part1" class="btn-group" role="group">  
  <div class="btn-group" role="group">     
 <div id="cldf" > 
-  @using (Ajax.BeginForm("IndexSort","Cold" ,new AjaxOptions { UpdateTargetId="upd" }))
+  @using (Ajax.BeginForm("IndexSort","Cold" ,new AjaxOptions {
+      UpdateTargetId="upd",
+      LoadingElementId="loading", 
+      LoadingElementDuration=1000}))
   { 
   <input type="hidden" name="id" value="true" />
 
@@ -29,7 +36,12 @@
 </div>
 <div class="btn-group" role="group">   
 <div id="htf" >
- @using (Ajax.BeginForm("IndexSort","Hot" ,new AjaxOptions { UpdateTargetId="upd" }))
+ @using (Ajax.BeginForm("IndexSort", "Hot", new AjaxOptions
+ {
+     UpdateTargetId = "upd",
+     LoadingElementId = "loading",
+     LoadingElementDuration = 1000
+ }))
   { 
   <input type="hidden" name="id" value="true" />
 
@@ -38,7 +50,12 @@
 </div>
 <div class="btn-group" role="group">   
 <div id="swgf" >
- @using (Ajax.BeginForm("IndexSort","Sewage" ,new AjaxOptions { UpdateTargetId="upd" }))
+ @using (Ajax.BeginForm("IndexSort", "Sewage", new AjaxOptions
+ {
+     UpdateTargetId = "upd",
+     LoadingElementId = "loading",
+     LoadingElementDuration = 1000
+ }))
   { 
   <input type="hidden" name="id" value="true" />
 
@@ -47,7 +64,12 @@
 </div>
 <div class="btn-group" role="group">   
 <div id="elf" >
- @using (Ajax.BeginForm("IndexSort", "Electricity", new AjaxOptions { UpdateTargetId = "upd" }))
+ @using (Ajax.BeginForm("IndexSort", "Electricity", new AjaxOptions
+ {
+     UpdateTargetId = "upd",
+     LoadingElementId = "loading",
+     LoadingElementDuration = 1000
+ }))
   { 
   <input type="hidden" name="id" value="true" />
 
@@ -66,14 +88,14 @@
 </div>
 
 
-
-<script type="text/javascript">
+<img id="loading" src="@Url.Content("~/Content/Image/ajax.gif")" style="display:none" />
+@*<script type="text/javascript">
     jQuery(document).ready(function () {
-
+       
        
     $(function () {
 
-        $('input').bind('click', function (e) {
+        $('#past input').bind('click', function (e) {
             var vl = $(this).attr('name');
             console.log(vl);
            
@@ -82,7 +104,7 @@
 
             $('#cldf input:first').attr('value', vl);
 
-            $('#form0 ').append(function (i) { return '<button type="submit" class="btn btn-default  ">Cold water </button>' });
+            $('#form0 ').append(function (i) { return '<button id=btnc type="submit" class="btn btn-default  ">Cold water </button>' });
             $('#htf input:first').attr('value', vl);
             $('#form1 ').append(function (i) { return '<button type="submit" class="btn btn-default  ">Hot water </button>' });
             $('#swgf input:first').attr('value', vl);
@@ -98,20 +120,29 @@
 
 
     });
-  
+   
+        
 });
 
-</script>
-<script type="text/javascript">
+</script>*@
+@*<script type="text/javascript">
     $(document).ready(function () {
         $('#reload').click(function () {
              $("body").load("/Home/ShowTrend/");
             console.log("I click")
         });
         //$('.btn.btn-default ').click(function () {
-        //    console.log('Click button')
+        //    console.log('Click button')numberOfMonths: 12, showButtonPanel: true,
+        //});
+        //$(function () {
+        //    $("#datepicker").datepicker({ dateFormat: "yy", yearRange: "2015:2018", changeYear: true });
         //});
        
     });
-</script>
+</script>*@
+@*<link href="~/Content/jquery-ui-1.10.4/themes/base/jquery.ui.theme.css" rel="stylesheet" />
+<link href="~/Content/jquery-ui-1.10.4/themes/base/jquery-ui.css" rel="stylesheet" />
+<script src="~/Content/jquery-ui-1.10.4/ui/jquery-ui.js"></script>*@
 @Scripts.Render("~/scripts/jquery.unobtrusive-ajax.js")
+<script src="~/Scripts/Add_button_value.js"></script>
+<script src="~/Scripts/Reload_button.js"></script>
