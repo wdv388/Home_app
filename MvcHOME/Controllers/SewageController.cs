@@ -18,7 +18,11 @@ namespace MvcHOME.Controllers
 
         public ActionResult Index(int? id,int? page)
         {
+            #region dropdownlists
             ViewBag.Hom_ID = new SelectList(db.HomItems, "ID", "Apartament_naber");
+            var time = db.SewageНабор.Select(s => s.Data.Year).Distinct().ToList();
+            ViewBag.Time = new SelectList(time);
+            #endregion
             var sewageнабор = db.SewageНабор.Include(s => s.Hom);
             if (id==null)
             {
@@ -62,18 +66,31 @@ namespace MvcHOME.Controllers
                        select p).ToList();
             return View(sew);
         }
-        public ActionResult IndexSort(int? id) 
+        public ActionResult IndexSort(int? id,int? Data) 
         {
-            if (id==null)
+            if (id==null & Data==null)
             {
-                 var sewageнабор = db.SewageНабор.Include(s => s.Hom);
-                 return PartialView(sewageнабор);
+                return HttpNotFound();
+                 //var sewageнабор = db.SewageНабор.Include(s => s.Hom);
+                 //return PartialView(sewageнабор);
             }
-            var sew = (from p in db.SewageНабор
-                       where p.HomID == id
+            else if (id==null || Data==null)
+            {
+                var sew = (from p in db.SewageНабор
+                           where p.HomID == id || p.Data.Year == Data
                        orderby p.ID descending
                        select p).ToList();
             return PartialView(sew);
+            }
+            else
+            {
+                var sew = (from p in db.SewageНабор
+                           where p.HomID == id & p.Data.Year == Data
+                           orderby p.ID descending
+                           select p).ToList();
+                return PartialView(sew);     
+            }
+            
         }
         //
         // GET: /Sewage/Details/5

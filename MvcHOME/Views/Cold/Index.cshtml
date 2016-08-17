@@ -1,28 +1,33 @@
 ﻿@model IEnumerable<MvcHOME.Cold_Water>
 
 @{
-    ViewBag.Title = @DateTime.Now
-;
-}
+    ViewBag.Title = @DateTime.Now;
 
-<h2>Холодна вода</h2>
+}
+  
+<h2><p class="text-info">Холодна вода</p></h2>
  @using PagedList.Mvc; 
 @using PagedList; 
+<div class="alert alert-warning col-md-3 col-md-offset-4" role="alert"> <span class="badge">Filter</span>
 @using (Ajax.BeginForm("IndexSort", new AjaxOptions { UpdateTargetId="result" }))
     {
-        @Html.DropDownList("ID", ViewBag.Hom_ID as SelectList,String.Empty);
-     //   @Html.DropDownList("Data", ViewBag.Data as SelectList, String.Empty);
-      //   @Html.DropDownList("Time",String.Empty);
+    @Html.DisplayName("Apartment");
+        @Html.DropDownList("ID", ViewBag.Hom_ID as SelectList, String.Empty);
+   
+   @Html.DisplayName("Years");
+        @Html.DropDownList("Data",ViewBag.Time as SelectList ,String.Empty);
                                                                              
     
-                <input type="submit" value="Поиск" />        
+                <input type="submit" value="Поиск"  class="btn btn-primary "/>        
       
-    };
-  @using (Ajax.BeginForm("Write", new AjaxOptions { OnSuccess = "OnSuccess", OnComplete = "OnComplete" }))
+    }
+
+</div>
+@*  @using (Ajax.BeginForm("Write", new AjaxOptions { OnSuccess = "OnSuccess", OnComplete = "OnComplete" }))
   { 
   <input type="hidden" name="wrt" value="true" />
   <input type="submit" value="Save to disk" />
-  };
+  };*@
     
 
 @* @Html.DropDownList("ID", ViewBag.HomID as SelectList)*@
@@ -103,12 +108,23 @@
 </div>
 @Scripts.Render("~/scripts/jquery.unobtrusive-ajax.js")
 <script type="text/javascript">
-    $(document).ready(function(){
-        function OnSuccess(data) {
-            alert("Запрос был успешно выполнен. Получены следующие данные: \n" + data);
-        }
-        function OnComplete(request, status) {
-            alert("Статус запроса : " + status);
-        }
+    $(document).ready(function () {
+        $(function () {
+            $("input").on("click", function () {
+                $(this).removeClass("btn btn-primary").addClass('btn btn-success');
+               
+               setTimeout(function () {
+                   $("input").removeClass('btn btn-success').addClass("btn btn-primary");
+                }, 1000); 
+            });
+           
+
+        });
+        //function OnSuccess(data) {
+        //    alert("Запрос был успешно выполнен. Получены следующие данные: \n" + data);
+        //}
+        //function OnComplete(request, status) {
+        //    alert("Статус запроса : " + status);
+        //}
     });
 </script>

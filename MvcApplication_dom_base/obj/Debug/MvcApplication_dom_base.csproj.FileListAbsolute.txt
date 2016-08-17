@@ -18,6 +18,5 @@ C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcApplication_dom_b
 C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcApplication_dom_base\bin\System.Web.WebPages.Razor.xml
 C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcApplication_dom_base\bin\ru\EntityFramework.resources.dll
 C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcApplication_dom_base\bin\ru\System.Web.Providers.resources.dll
-C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcApplication_dom_base\obj\Debug\MvcApplication_dom_base.csprojResolveAssemblyReference.cache
 C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcApplication_dom_base\obj\Debug\MvcApplication_dom_base.dll
 C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcApplication_dom_base\obj\Debug\MvcApplication_dom_base.pdb

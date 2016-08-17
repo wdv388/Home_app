@@ -1,0 +1,16 @@
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHome.Test\obj\Debug\MvcHome.Test.csprojResolveAssemblyReference.cache
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHome.Test\bin\Debug\MvcHome.Test.dll
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHome.Test\bin\Debug\MvcHome.Test.pdb
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHome.Test\bin\Debug\MvcHOME.dll
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHome.Test\bin\Debug\EntityFramework.dll
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHome.Test\bin\Debug\System.Web.Optimization.dll
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHome.Test\bin\Debug\PagedList.dll
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHome.Test\bin\Debug\Newtonsoft.Json.dll
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHome.Test\bin\Debug\MvcHOME.pdb
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHome.Test\bin\Debug\EntityFramework.xml
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHome.Test\bin\Debug\PagedList.xml
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHome.Test\bin\Debug\Newtonsoft.Json.xml
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHome.Test\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHome.Test\bin\Debug\ru\System.Web.Optimization.resources.dll
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHome.Test\obj\Debug\MvcHome.Test.dll
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHome.Test\obj\Debug\MvcHome.Test.pdb

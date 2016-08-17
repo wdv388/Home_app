@@ -20,7 +20,12 @@ namespace MvcHOME.Controllers
         public ActionResult Index(int? id,int? page)
         {
             var hot_waterнабор = db.Hot_WaterНабор.Include(h => h.Hom);
+            #region dropdownlist
             ViewBag.Hom_ID = new SelectList(db.HomItems, "ID", "Apartament_naber");
+            var time = db.Hot_WaterНабор.Select(s => s.Data.Year).Distinct().ToList();
+            ViewBag.Time = new SelectList(time);
+            #endregion
+
             if (id==null)
             {
             
@@ -66,20 +71,35 @@ namespace MvcHOME.Controllers
             
             return View(hw);
         }
-        public ActionResult IndexSort(int? id)
+        public ActionResult IndexSort(int? id,int ? Data)
         {
-            if (id==null)
+            if (id==null & Data==null)
             {
-                var hot_waterнабор = db.Hot_WaterНабор.Include(h => h.Hom);
-                return PartialView(hot_waterнабор);
+                return HttpNotFound();
+                //var hot_waterнабор = db.Hot_WaterНабор.Include(h => h.Hom);
+                //return PartialView(hot_waterнабор);
             }
-            var hw = (from p in db.Hot_WaterНабор
-                      where p.HomID == id
+            else if (id==null || Data==null)
+            {
+                 var hw = (from p in db.Hot_WaterНабор
+                           where p.HomID == id || p.Data.Year == Data
                       orderby p.ID descending
                       select p).ToList();
 
             
             return PartialView(hw);
+            }
+            else
+            {
+                var hw = (from p in db.Hot_WaterНабор
+                          where p.HomID == id & p.Data.Year == Data
+                          orderby p.ID descending
+                          select p).ToList();
+
+
+                return PartialView(hw);  
+            }
+           
         }
         //
         // GET: /Hot/Details/5

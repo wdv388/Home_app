@@ -6,14 +6,19 @@
 ;
 }
 
-<h2>Електрика</h2>
+<h2><p class="text-info">Електрика </p></h2>
+<div class="alert alert-warning col-md-3 col-md-offset-4" role="alert"> <span class="badge">Filter</span>
 @using (Ajax.BeginForm("IndexSort", new AjaxOptions { UpdateTargetId="result" }))
     {
+        @Html.DisplayName("Apartment");
         @Html.DropDownList("ID", ViewBag.Hom_ID as SelectList, String.Empty);
-                        
-                <input type="submit" value="Поиск" />        
+        @Html.DisplayName("Years");
+        @Html.DropDownList("Data", ViewBag.Time as SelectList, String.Empty);
+             
+                <input type="submit" value="Поиск"  class="btn btn-primary"/>        
       
     }
+    </div>
 @*<p>
     @Html.ActionLink("Create New", "Create")
 </p>*@
@@ -119,6 +124,7 @@
 
 </table>
 
-</div>
+
 @Html.PagedListPager( (IPagedList)ViewBag.OnePageOfProducts, page => Url.Action("Index", new { page }) )
+</div>
 @Scripts.Render("~/scripts/jquery.unobtrusive-ajax.js")

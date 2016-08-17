@@ -19,11 +19,13 @@ namespace MvcHOME.Controllers
         public ActionResult Index(int? id,int? page)
         {
             var electricityнабор = db.ElectricityНабор.Include(e => e.Hom);
+            #region dropdownlist
             ViewBag.Hom_ID = new SelectList(db.HomItems, "ID", "Apartament_naber");
-           
-              
-              #region pagination
-              // var products = MyProductDataSource.FindAllProducts(); //returns IQueryable<Product> representing an unknown number of products. a thousand maybe?
+            var time = db.ElectricityНабор.Select(s => s.Data.Year).Distinct().ToList();
+             ViewBag.Time = new SelectList(time);
+            #endregion
+            #region pagination
+            // var products = MyProductDataSource.FindAllProducts(); //returns IQueryable<Product> representing an unknown number of products. a thousand maybe?
               var pord = db.ElectricityНабор.OrderBy(c => c.ID).Include(c => c.Hom);
 
               var pageNumber = page ?? 1; // if no page was specified in the querystring, default to the first page (1)
@@ -66,19 +68,33 @@ namespace MvcHOME.Controllers
             return View();
         }
 
-        public ActionResult IndexSort(int? id)
+        public ActionResult IndexSort(int? id, int? Data)
         {
-            if (id==null)
+            if (id == null & Data == null)
             {
-                var electricityнабор = db.ElectricityНабор.Include(e => e.Hom);
-                return PartialView(electricityнабор);
+                //var electricityнабор = db.ElectricityНабор.Include(e => e.Hom);
+                //return PartialView(electricityнабор);
+                return HttpNotFound();
             }
-            var elect = (from p in db.ElectricityНабор
-                         where p.HomID == id
+            else if (id==null || Data==null)
+            {
+                var elect = (from p in db.ElectricityНабор
+                             where p.HomID == id || p.Data.Year == Data
                          orderby p.ID descending
                          select p).ToList();
 
             return PartialView(elect);
+            }
+            else
+            {
+                var elect = (from p in db.ElectricityНабор
+                             where p.HomID == id & p.Data.Year == Data
+                             orderby p.ID descending
+                             select p).ToList();
+
+                return PartialView(elect);     
+            }
+          
         }
         //
         // GET: /Electricity/Details/5

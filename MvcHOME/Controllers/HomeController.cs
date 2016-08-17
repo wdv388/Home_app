@@ -11,18 +11,19 @@ namespace MvcHOME.Controllers
     public class HomeController : Controller
     {
         private Model1Container db = new Model1Container();
-        //
+
+        //GET Ajax Index View
         public ActionResult IndexAj()
         {
             return View();
         }
-        //
+        //Get All Items
         public ActionResult ShowTrend()
         {
             var homlist = db.HomItems.ToList();
             return View(homlist);
         }
-        //
+        //Get Alternative Index View
         public ActionResult Start()
         {
             var list = db.HomItems.ToList();
@@ -37,9 +38,10 @@ namespace MvcHOME.Controllers
             {
               return View(db.HomItems.ToList());
             }
-            catch (Exception e)
+            catch (Exception )
             {
-                return HttpNotFound(e.Message);
+                return RedirectToAction("IndexAj");
+                // return HttpNotFound(e.Message);
               //  throw;
             }
             

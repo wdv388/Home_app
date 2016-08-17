@@ -23,12 +23,17 @@ namespace MvcHOME.Controllers
                 var cold_waterнабор = db.Cold_WaterНабор.Include(c => c.Hom);
           
                 var cold = db.Cold_WaterНабор.Select(s => s.HomID);
-              //  ViewBag.HomID = new SelectList(db.HomItems, "ID", "Apartament_naber");
+                #region dropdownlist
+                //  ViewBag.HomID = new SelectList(db.HomItems, "ID", "Apartament_naber");
                 ViewBag.Hom_ID = new SelectList(db.HomItems, "ID", "Apartament_naber");
-             //   ViewBag.Data = new SelectList(db.Cold_WaterНабор, "Data", "Data ");
-                ViewBag.Time = new SelectList(from p in db.Cold_WaterНабор
-                                              select p.Data.Year).ToList();
-                //
+
+
+                var time = db.Cold_WaterНабор.Select(s => s.Data.Year).Distinct().ToList();
+
+             
+                  ViewBag.Time = new SelectList(time );
+                #endregion
+                  //
                 #region pagination
                 // var products = MyProductDataSource.FindAllProducts(); //returns IQueryable<Product> representing an unknown number of products. a thousand maybe?
                 var pord = db.Cold_WaterНабор.OrderBy(c => c.ID).Include(c => c.Hom);
@@ -77,24 +82,39 @@ namespace MvcHOME.Controllers
             #endregion
             return View();
         }
-        public ActionResult IndexSort(int? id, DateTime? Data )
+        public ActionResult IndexSort(int? id, int? Data )
         {
-            if (id==null)
+            if (id==null & Data==null)
             {
               //  var cold_waterнабор = db.Cold_WaterНабор.Include(c => c.Hom);
                 //return PartialView(cold_waterнабор);
                 return HttpNotFound();
-            }
-                var cw = (from p in db.Cold_WaterНабор
-                      where p.HomID == id
-                      //where p.Data== Data
+            } 
+            else if (id==null || Data==null)
+            {
+                 var cw = (from p in db.Cold_WaterНабор
+                     where p.HomID == id 
+                  ||  p.Data.Year== Data
                       orderby p.Data.Year  ascending
                      
                       select p).ToList();
+                 return PartialView(cw);
+            }
+            else
+            {
+                var cw = (from p in db.Cold_WaterНабор
+                          where p.HomID == id
+                       & p.Data.Year == Data
+                          orderby p.Data.Year ascending
+
+                          select p).ToList();
+                return PartialView(cw);
+            }
+               
 
          //   ViewBag.Hom_ID = new SelectList(db.HomItems, "ID", "Apartament_naber");
 
-            return PartialView(cw);
+          //  return PartialView(cw);
         }
         //
         // GET: /Cold/Details/5
