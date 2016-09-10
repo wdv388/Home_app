@@ -20,3 +20,4 @@ C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\Mvc3_dom\bin\ru\Enti
 C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\Mvc3_dom\bin\ru\System.Web.Providers.resources.dll
 C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\Mvc3_dom\obj\Debug\Mvc3_dom.dll
 C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\Mvc3_dom\obj\Debug\Mvc3_dom.pdb
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\Mvc3_dom\obj\Debug\Mvc3_dom.csprojResolveAssemblyReference.cache

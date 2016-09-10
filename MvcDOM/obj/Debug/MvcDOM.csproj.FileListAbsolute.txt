@@ -8,3 +8,4 @@ C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcDOM\bin\Newtonsof
 C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcDOM\bin\ru\EntityFramework.resources.dll
 C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcDOM\obj\Debug\MvcDOM.dll
 C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcDOM\obj\Debug\MvcDOM.pdb
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcDOM\obj\Debug\MvcDOM.csprojResolveAssemblyReference.cache

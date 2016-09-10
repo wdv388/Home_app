@@ -6,15 +6,22 @@
 
 <h2>Details</h2>
 
-<fieldset>
-    <legend>Hom</legend>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.Apartament_naber)
+<div class="row"> 
+<div class="col-md-2 col-md-offset-3"> 
+<div class="panel panel-primary">
+  <div class="panel-heading">
+      <div class="display-label">
+       <h4>  @Html.DisplayNameFor(model => model.Apartament_naber)</h4> 
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.Apartament_naber)
-    </div>
+     <span class="badge">   @Html.DisplayFor(model => model.Apartament_naber)</span>
+    </div>    
+      
+  </div>
+  <div class="panel-body">
+
+
+       
 
     <div class="display-label">
          @Html.DisplayNameFor(model => model.Benefit)
@@ -29,8 +36,22 @@
     <div class="display-field">
         @Html.DisplayFor(model => model.Gas)
     </div>
-</fieldset>
-<p>
+
+
+  </div>
+</div>
+</div>
+</div>
+<div class="row"> 
+    <div class="col-md-2 col-md-offset-3"" > 
+<div class=" panel panel-default">
+  <div class="panel-body">
+  <p>
     @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+
+  </div>
+</div>
+</div>
+</div>

@@ -201,7 +201,7 @@ namespace MvcHOME.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.HomID = new SelectList(db.HomItems, "ID", "ID", cold_water.HomID);
+            ViewBag.HomID = new SelectList(db.HomItems, "ID", "Apartament_naber", cold_water.HomID);
             return View(cold_water);
         }
 
