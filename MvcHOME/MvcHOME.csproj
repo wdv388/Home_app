@@ -972,6 +972,7 @@
     <Content Include="Content\jquery-ui-1.10.4\ui\.jshintrc" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\Add_button_value.js" />
+    <Content Include="Scripts\Add_value_to_theforms.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\Cold_water.js" />

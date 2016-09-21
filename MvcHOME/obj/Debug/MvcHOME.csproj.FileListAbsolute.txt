@@ -34,3 +34,4 @@ C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHOME\bin\ru\Syste
 C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHOME\bin\ru\System.Web.WebPages.Razor.resources.dll
 C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHOME\obj\Debug\MvcHOME.dll
 C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHOME\obj\Debug\MvcHOME.pdb
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHOME\obj\Debug\MvcHOME.csprojResolveAssemblyReference.cache

@@ -21,6 +21,8 @@ namespace MvcHOME.Controllers
         public ActionResult ShowTrend()
         {
             var homlist = db.HomItems.ToList();
+            var time = db.Cold_WaterНабор.Select(s => s.Data.Year).Distinct().ToList();
+            ViewBag.Time = new SelectList(time);
             return View(homlist);
         }
         //Get Alternative Index View

@@ -18,6 +18,9 @@
         </div> 
   
  }  
+        @Html.DisplayName("Years")
+        @Html.DropDownList("Data",ViewBag.Time as SelectList ,String.Empty)
+
 @*   <p>Date: <input type="text" id="datepicker" class="col-md-1"></p>   *@
 </div> 
       
@@ -30,7 +33,7 @@
       LoadingElementDuration=1000}))
   { 
   <input type="hidden" name="id" value="true" />
-
+  <input type="hidden" name="Data" value="true" />
   }
 </div>
 </div>
@@ -44,7 +47,7 @@
  }))
   { 
   <input type="hidden" name="id" value="true" />
-
+<input type="hidden" name="Data" value="true" />
   }
 </div>
 </div>
@@ -58,7 +61,7 @@
  }))
   { 
   <input type="hidden" name="id" value="true" />
-
+<input type="hidden" name="Data" value="true" />
   }
 </div>
 </div>
@@ -72,7 +75,7 @@
  }))
   { 
   <input type="hidden" name="id" value="true" />
-
+<input type="hidden" name="Data" value="true" />
   }
 </div>
 </div>
@@ -146,3 +149,4 @@
 @Scripts.Render("~/scripts/jquery.unobtrusive-ajax.js")
 <script src="~/Scripts/Add_button_value.js"></script>
 <script src="~/Scripts/Reload_button.js"></script>
+<script src="~/Scripts/Add_value_to_theforms.js"></script>

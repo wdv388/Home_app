@@ -6,7 +6,7 @@
 
             $('#past input').bind('click', function (e) {
                 var vl = $(this).attr('name');
-                console.log(vl);
+                console.log("aprtament",vl);
            
            
             
@@ -21,7 +21,7 @@
                 $('#elf input:first').attr('value', vl);
                 $('#form3 ').append(function (i) { return '<button type="submit" class="btn btn-default " > Electric</button>' });
                 $('#past input').attr('disabled', 'disabled');
-
+                $('#Data').removeAttr('disabled');
                 $('#reload').removeAttr('disabled');
 
                 //  $('input').unbind();
