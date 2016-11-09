@@ -25,7 +25,8 @@ namespace MvcHOME
       [DisplayFormat(DataFormatString = "{0:0.0000}")] 
         public decimal Sum { get; set; }
         public int HomID { get; set; }
- 
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:dd.MM.yyyy}", ApplyFormatInEditMode = true)]
         public System.DateTime Data { get; set; }
     
         public virtual Hom Hom { get; set; }

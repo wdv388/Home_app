@@ -4,7 +4,8 @@
     ViewBag.Title ="Create";
     if (ViewBag.benefit)
     {
-       <script src="~/Scripts/Electr.js"></script> 
+        <script src="~/Scripts/Electr_var_2_2.js"></script>
+     //  <script src="~/Scripts/Electr.js"></script> 
     }else{
     <script src="~/Scripts/ElectroTRUE.js"></script>
       }
@@ -48,7 +49,7 @@
             @Html.Label("Пільга", new { @class = "col-md-2 control-label" })
        
         <div class="col-md-4">
-            @Html.TextBoxFor(model => model.Privelege, new { @class = "form-control",@placeholder="Пільгове споживання(75кВт)" })
+            @Html.TextBoxFor(model => model.Privelege, new { @class = "form-control",@placeholder="Пільгове споживання("+@ViewBag.lim3+"кВт)" })
             @Html.ValidationMessageFor(model => model.Privelege)
         </div>
  </div>
@@ -181,3 +182,4 @@
 @*       <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">*@
 <link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />
 <script src="~/Content/jquery-ui-1.10.4/ui/jquery-ui.js"></script>
+<script src="~/Scripts/Electr_var_2_2.js"></script>

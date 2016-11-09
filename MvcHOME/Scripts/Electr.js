@@ -1,4 +1,5 @@
-﻿//ver 2.0 benefit
+﻿//to do: need to rewrite in switch case
+//ver 2.0 benefit
 $(document).ready(function () {
     var benefit = $('#benefit').val();  //true or false
     var benefitPerson = $('#benefitPerson').val(); // 2 or 0

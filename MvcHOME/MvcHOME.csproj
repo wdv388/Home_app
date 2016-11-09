@@ -979,6 +979,7 @@
     <Content Include="Scripts\Electr.js" />
     <Content Include="Scripts\Electricity.js" />
     <Content Include="Scripts\ElectroTRUE.js" />
+    <Content Include="Scripts\Electr_var_2_2.js" />
     <Content Include="Scripts\Hot_water.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />

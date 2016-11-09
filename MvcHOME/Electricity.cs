@@ -33,6 +33,8 @@ namespace MvcHOME
         public decimal Sum { get; set; }
         [DisplayFormat(DataFormatString = "{0:0.0000}")]
         public Nullable<decimal> SumO { get; set; }
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:dd.MM.yyyy}", ApplyFormatInEditMode = true)]
         public System.DateTime Data { get; set; }
         public int HomID { get; set; }
     
