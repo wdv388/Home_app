@@ -35,3 +35,13 @@ C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHOME\bin\ru\Syste
 C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHOME\obj\Debug\MvcHOME.dll
 C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHOME\obj\Debug\MvcHOME.pdb
 C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHOME\obj\Debug\MvcHOME.csprojResolveAssemblyReference.cache
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHOME\bin\System.Net.Http.Formatting.dll
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHOME\bin\System.Web.Http.dll
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHOME\bin\System.Web.Http.WebHost.dll
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHOME\bin\System.Net.Http.Formatting.xml
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHOME\bin\System.Web.Http.xml
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHOME\bin\System.Web.Http.WebHost.xml
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHOME\bin\ru\System.Net.Http.Formatting.resources.dll
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHOME\bin\ru\System.Web.Http.resources.dll
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHOME\bin\ru\System.Web.Http.WebHost.resources.dll
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcHOME\bin\MvcHOME.dll.config

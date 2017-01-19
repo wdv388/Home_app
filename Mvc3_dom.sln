@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc3_dom", "Mvc3_dom\Mvc3_dom.csproj", "{188C25ED-CF64-4BE8-A860-02845A72F8DD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcApplication_dom_base", "MvcApplication_dom_base\MvcApplication_dom_base.csproj", "{FA66690A-C925-47E0-9175-15ED7940D429}"
