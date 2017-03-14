@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="dom" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\max\\Documents\\Visual\ Studio\ 2012\\Projects\\Mvc3_dom\\Mvc3_dom\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\max\\Documents\\Visual\ Studio\ 2012\\Projects\\Mvc3_dom\\Mvc3_dom\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=(LocalDb)\v11.0;Initial Catalog=aspnet-Mvc3_dom-20140111174958;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\aspnet-Mvc3_dom-20140111174958.mdf" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\max\\Documents\\Visual\ Studio\ 2012\\Projects\\Mvc3_dom\\Mvc3_dom\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="Mvc3_dom.Models.DBContext05-Web.config Connection String" description="" value="Mvc3_dom.Models.DBContext05_ConnectionString" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\max\\Documents\\Visual\ Studio\ 2012\\Projects\\Mvc3_dom\\Mvc3_dom\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Mvc3_dom.Models.DBContext05']/@connectionString" />
+  </parameter>
+</parameters>

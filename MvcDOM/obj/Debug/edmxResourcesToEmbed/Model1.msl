@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model1StoreContainer" CdmEntityContainer="Model1Container">
+    <EntitySetMapping Name="HomItems">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Hom)">
+        <MappingFragment StoreEntitySet="HomItems">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Apartament_naber" ColumnName="Apartament_naber" />
+          <ScalarProperty Name="Benefit" ColumnName="Benefit" />
+          <ScalarProperty Name="Gas" ColumnName="Gas" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cold_WaterНабор">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Cold_Water)">
+        <MappingFragment StoreEntitySet="Cold_WaterНабор">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CW1" ColumnName="CW1" />
+          <ScalarProperty Name="CW0" ColumnName="CW0" />
+          <ScalarProperty Name="CWT" ColumnName="CWT" />
+          <ScalarProperty Name="CWP" ColumnName="CWP" />
+          <ScalarProperty Name="CWD" ColumnName="CWD" />
+          <ScalarProperty Name="Sum" ColumnName="Sum" />
+          <ScalarProperty Name="HomID" ColumnName="HomID" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Hot_WaterНабор">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Hot_Water)">
+        <MappingFragment StoreEntitySet="Hot_WaterНабор">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="HW1" ColumnName="HW1" />
+          <ScalarProperty Name="HW0" ColumnName="HW0" />
+          <ScalarProperty Name="HWT" ColumnName="HWT" />
+          <ScalarProperty Name="HWP" ColumnName="HWP" />
+          <ScalarProperty Name="HWD" ColumnName="HWD" />
+          <ScalarProperty Name="Sum" ColumnName="Sum" />
+          <ScalarProperty Name="HomID" ColumnName="HomID" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ElectricityНабор">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Electricity)">
+        <MappingFragment StoreEntitySet="ElectricityНабор">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EC" ColumnName="EC" />
+          <ScalarProperty Name="EP" ColumnName="EP" />
+          <ScalarProperty Name="ED" ColumnName="ED" />
+          <ScalarProperty Name="L150_250" ColumnName="L150_250" />
+          <ScalarProperty Name="upL150_250" ColumnName="upL150_250" />
+          <ScalarProperty Name="Sum" ColumnName="Sum" />
+          <ScalarProperty Name="HomID" ColumnName="HomID" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TarrifНабор">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Tarrif)">
+        <MappingFragment StoreEntitySet="TarrifНабор">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CW" ColumnName="CW" />
+          <ScalarProperty Name="HW" ColumnName="HW" />
+          <ScalarProperty Name="E" ColumnName="E" />
+          <ScalarProperty Name="HomID" ColumnName="HomID" />
+          <ScalarProperty Name="upEL150_250" ColumnName="upEL150_250" />
+          <ScalarProperty Name="S" ColumnName="S" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SewageНабор">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Sewage)">
+        <MappingFragment StoreEntitySet="SewageНабор">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="S1" ColumnName="S1" />
+          <ScalarProperty Name="S0" ColumnName="S0" />
+          <ScalarProperty Name="ST" ColumnName="ST" />
+          <ScalarProperty Name="SP" ColumnName="SP" />
+          <ScalarProperty Name="SD" ColumnName="SD" />
+          <ScalarProperty Name="Sum" ColumnName="Sum" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="HomID" ColumnName="HomID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
