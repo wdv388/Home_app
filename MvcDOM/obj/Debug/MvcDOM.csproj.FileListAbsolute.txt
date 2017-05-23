@@ -1,0 +1,11 @@
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcDOM\bin\MvcDOM.dll
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcDOM\bin\MvcDOM.pdb
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcDOM\bin\EntityFramework.dll
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcDOM\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcDOM\bin\Newtonsoft.Json.dll
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcDOM\bin\EntityFramework.xml
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcDOM\bin\Newtonsoft.Json.xml
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcDOM\bin\ru\EntityFramework.resources.dll
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcDOM\obj\Debug\MvcDOM.dll
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcDOM\obj\Debug\MvcDOM.pdb
+C:\Users\max\Documents\Visual Studio 2012\Projects\Mvc3_dom\MvcDOM\obj\Debug\MvcDOM.csprojResolveAssemblyReference.cache
